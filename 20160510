@@ -13,3 +13,7 @@ void fill (ForwardIterator first, ForwardIterator last, const T& val)
     ++first;
   }
 }
+
+
+
+int = char - '0'
