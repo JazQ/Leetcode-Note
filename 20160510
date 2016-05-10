@@ -4,3 +4,12 @@
 无序保存：
     哈希函数组织的->
     unordered_map unordered_set unordered_multimap unordered_multiset
+
+
+void fill (ForwardIterator first, ForwardIterator last, const T& val)
+{
+  while (first != last) {
+    *first = val;
+    ++first;
+  }
+}
