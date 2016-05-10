@@ -1,0 +1,2 @@
+# Leetcode-Note
+Studying
