@@ -1,0 +1,6 @@
+关联容器：
+按关键字有序保存元素：
+    map set multimap multiset
+无序保存：
+    哈希函数组织的->
+    unordered_map unordered_set unordered_multimap unordered_multiset
