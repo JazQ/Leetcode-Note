@@ -42,4 +42,11 @@ private:
 int
 main()
 {
+  vector<int> nums1{};
+  vector<int> nums2{ 1 };
+  Solution S;
+  cout << S.findMedianSortedArrays(nums1, nums2) << endl;
+
+  system("pause");
+  return 0;
 }
