@@ -4,11 +4,9 @@
 
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
-  vector<vector<int>> fourSum(vector<int>& nums, int target)
-  {
+  vector<vector<int>> fourSum(vector<int> &nums, int target) {
     vector<vector<int>> result;
     if (nums.size() < 4)
       return result;
@@ -44,11 +42,9 @@ public:
   }
 };
 
-int
-main()
-{
+int main() {
   vector<int> nums;
-  int a[] = { 1, 0, -1, 0, -2, 2 };
+  int a[] = {1, 0, -1, 0, -2, 2};
   for (int i = 0; i < sizeof(a) / sizeof(a[0]); i++)
     nums.push_back(a[i]);
   Solution S;
