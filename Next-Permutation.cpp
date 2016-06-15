@@ -12,8 +12,10 @@ public:
     for (int i = s; i > 0; i--) {
       if (nums[i] > nums[i - 1]) {
         for (int j = s; j >= i; j--) {
-          if (nums[j] > nums[i - 1])
+          if (nums[j] > nums[i - 1]) {
             swap(nums[j], nums[i - 1]);
+            break;
+          }
         }
         temp = i;
         break;
@@ -25,7 +27,7 @@ public:
 };
 
 int main() {
-  vector<int> nums{};
+  vector<int> nums{2, 3, 1};
   Solution S;
   S.nextPermutation(nums);
   for (auto i : nums)
