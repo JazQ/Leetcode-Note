@@ -1,2 +1,2 @@
 # Leetcode-Note
-Studying
+Leetcode-Solutions.
