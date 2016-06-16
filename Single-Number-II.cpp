@@ -24,5 +24,4 @@ int main() {
   vector<int> nums{1, 1, 1, 2, 2, 2, 3, 4, 4, 4};
   Solution s;
   cout << s.singleNumber(nums) << endl;
-  ;
 }
