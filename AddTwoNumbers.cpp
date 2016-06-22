@@ -19,8 +19,8 @@ ListNode *CreateList() {
     ListNode *pHead = new ListNode(a);
     pHead->next = CreateList();
     return pHead;
-  }
-  return NULL;
+  } else
+    return NULL;
 }
 
 class Solution {
@@ -51,16 +51,11 @@ public:
 int main() {
   ListNode *l1 = CreateList();
   ListNode *l2 = CreateList();
-  ListNode *bi = l1;
-  while (bi != NULL) {
-    cout << bi->val << " ";
-    bi = bi->next;
-  }
-  cout << endl;
-  ListNode *l;
   Solution s;
-  l = s.addTwoNumbers(l1, l2);
-  while (l != nullptr)
-    cout << l->val << " ";
-  cout << endl;
+  ListNode *l = s.addTwoNumbers(l1, l2);
+  while (l != NULL) {
+    cout << l->val << "->";
+    l = l->next;
+  }
+  cout << "NULL" << endl;
 }
