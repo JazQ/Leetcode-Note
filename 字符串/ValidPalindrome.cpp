@@ -11,9 +11,9 @@ public:
     transform(s.begin(), s.end(), s.begin(), ::tolower);
     auto left = s.begin(), right = s.end();
     while (left < right) {
-      if (!isalpha(*left))
+      if (!isalnum(*left))
         left++;
-      else if (!isalpha(*right))
+      else if (!isalnum(*right))
         right--;
       else if (*left != *right)
         return false;
